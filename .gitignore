@@ -162,4 +162,3 @@ cython_debug/
 link_for_repo
 /postgresdata
 .env
-data

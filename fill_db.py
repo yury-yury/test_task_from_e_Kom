@@ -7,7 +7,7 @@ new_form: list[dict[str,str]] = [
         "password": "text",
     },
     {
-        "name": "Registering a user with a phone number",
+        "name": "Registering a user with a email",
         "user_email": "email",
         "password": "text",
     },
