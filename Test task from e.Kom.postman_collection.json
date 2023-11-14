@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "559e620c-d8f9-4439-ad18-f1c1f7c6e32f",
+		"name": "Test task from e.Kom",
+		"description": "Коллекция запросов к API приложения реализованного при выполнении тестового задания на позицию 'Junior+ Python разработчик, удаленно' от компании ООО e.Kom",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24610581",
+		"_collection_link": "https://speeding-crater-669833.postman.co/workspace/e6f6425b-9060-44d7-8415-8e00acf1dfaa/collection/24610581-559e620c-d8f9-4439-ad18-f1c1f7c6e32f?action=share&source=collection_link&creator=24610581"
+	},
+	"item": [
+		{
+			"name": "0.0.0.0:8000/get_form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_phone\": \"+7 800 800 10 10\",\n    \"password\": \"test_password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/get_form",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"get_form"
+					]
+				},
+				"description": "Получение названия подходящей формы из базы данных."
+			},
+			"response": [
+				{
+					"name": "0.0.0.0:8000/get_form",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_phone\": \"+7 800 800 10 10\",\n    \"password\": \"test_password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:8000/get_form",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"get_form"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "0.0.0.0:8000/get_form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user_email\": \"test@test.com\",\n    \"password\": \"test_password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/get_form",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"get_form"
+					]
+				},
+				"description": "Получение названия подходящей формы из базы данных."
+			},
+			"response": [
+				{
+					"name": "0.0.0.0:8000/get_form",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_email\": \"test@test.com\",\n    \"password\": \"test_password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:8000/get_form",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"get_form"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "0.0.0.0:8000/get_form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"test_username\",\n    \"first_name\": \"test\",\n    \"last_name\": \"test\",\n    \"date_of_birth\": \"14.11.2023\",\n    \"user_phone\": \"+7 800 800 14 65\",\n    \"user_email\": \"test@email.com\",\n    \"desription\": \"same text\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/get_form",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"get_form"
+					]
+				},
+				"description": "Получение названия подходящей формы из базы данных. Запрос содержит дополнительные поля не содержащиеся в базе данных."
+			},
+			"response": [
+				{
+					"name": "0.0.0.0:8000/get_form",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\": \"test_username\",\n    \"first_name\": \"test\",\n    \"last_name\": \"test\",\n    \"date_of_birth\": \"14.11.2023\",\n    \"user_phone\": \"+7 800 800 14 65\",\n    \"user_email\": \"test@email.com\",\n    \"desription\": \"same text\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:8000/get_form",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"get_form"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "0.0.0.0:8000/get_form",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"my_name\": \"Yury\",\n    \"my_surname\": \"Yanovsky\",\n    \"my_phone\": \"+7 962 446 76 71\",\n    \"my_email\": \"yury_yury@mail.ru\",\n    \"my_tg_nick\": \"@yury_yury_yanovsky\",\n    \"today\": \"2023-11-14\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "0.0.0.0:8000/get_form",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "8000",
+					"path": [
+						"get_form"
+					]
+				},
+				"description": "Получение схемы запроса с иказанием типа значений, подходящая форма в базе данных не найдена"
+			},
+			"response": [
+				{
+					"name": "0.0.0.0:8000/get_form",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"my_name\": \"Yury\",\n    \"my_surname\": \"Yanovsky\",\n    \"my_phone\": \"+7 962 446 76 71\",\n    \"my_email\": \"yury_yury@mail.ru\",\n    \"my_tg_nick\": \"@yury_yury_yanovsky\",\n    \"today\": \"2023-11-14\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "0.0.0.0:8000/get_form",
+							"host": [
+								"0",
+								"0",
+								"0",
+								"0"
+							],
+							"port": "8000",
+							"path": [
+								"get_form"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

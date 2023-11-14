@@ -1,4 +1,4 @@
-from database import collection
+from database import collection, async_collection
 from utils import is_data, is_phone, is_email
 
 
@@ -43,30 +43,36 @@ class Service:
 
 
     @staticmethod
-    def get_form(data: dict[str, str]):
+    async def get_form(data: dict[str, str]) -> dict[str, str]:
+        """
+        The asynchronous function get_form is a static method of the Service class.
+        Takes as an argument all parameters received by the handler in the body of the request
+        in the form of a dictionary. Implements the basic logic for processing received data
+        and generating a response. Returns the response as JSON.
+        """
         search_dict: dict[str, str] = {}
         for key, value in data.items():
-            if is_data(value):
+            if await is_data(value):
                 search_dict[key] = 'date'
-            elif is_phone(value):
+            elif await is_phone(value):
                 search_dict[key] = 'phone'
-            elif is_email(value):
+            elif await is_email(value):
                 search_dict[key] = 'email'
             else:
                 search_dict[key] = 'text'
 
-        list_form = [form for form in collection.find({}, {'_id': 0})]
+        cursor = async_collection.find({}, {'_id': 0})
+        list_form: list[dict[str, str]] = [form for form in await cursor.to_list(length=100)]
 
-        result = None
         for form in list_form:
             form_name = form.pop('name')
             for item in form.items():
                 if item not in search_dict.items():
                     break
             else:
-                result =form_name
+                return {'form_name': form_name}
 
-        if result is None:
+        else:
             return search_dict
 
-        return {'form_name': result}
+

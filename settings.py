@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class Settings(BaseSettings):
     """
     The Settings class inherits from the parent BaseSettings class from the pydantic_settings module.
-    Contains the necessary settings for working with the database, with the SMTP.server and application.
+    Contains the necessary settings for working with the database and application.
     """
 
     server_host: str = "0.0.0.0"

@@ -1,5 +1,8 @@
 from database import collection
 
+
+# A script for filling the database with test values in order to check the functionality of the created application.
+
 new_form: list[dict[str,str]] = [
     {
         "name": "Registering a user with a phone number",
